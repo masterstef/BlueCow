@@ -6,7 +6,7 @@
     <title>Inscription eSport</title>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
   </head>
-  <body>
+  <body class="Formulaire">
     <header>
       <h1>BlueCow</h1>
     
@@ -27,19 +27,21 @@
       <form>
         <input id="counter" name="counter" type="hidden" value="100">
         <fieldset>
-          <legend>Votre profil</legend>
-          <label for="nom">Nom</label><input id="nom" name="nom" type="text" required placeholder="Votre nom"><br>
-          <label for="prenom">Prénom</label><input id="prenom" name="prenom" type="text" required placeholder="Votre prénom"><br>
-          <label for="pseudo">Pseudo</label><input id="pseudo" name="pseudo" type="text" required placeholder="Votre pseudo"><br>
-          <label for ="motPasse">Mot de passe</label><input id="motPasse" name="motPasse" type="password" required placeholder="Votre mot de passe"> <br>
-          <label for ="motPasse">Confirmer mot de passe</label><input id="motPasse" name="motPasse" type="password" required placeholder="Confirmer votre mot de passe" > <br>
-          <label for="courriel">Courriel</label><input id="courriel" name="courriel" type="email" required placeholder="Votre courriel"> <br>
+          <legend>Informations</legend>
+          <div><label for="nom">Nom</label><input id="nom" name="nom" type="text" required placeholder="Votre nom"></div><br>
+          <div><label for="prenom">Prénom</label><input id="prenom" name="prenom" type="text" required placeholder="Votre prénom"></div><br>
+          <div><label for="identifiant">Identifiant</label><input id="identifiant" name="identifiant" type="text" required placeholder="Votre identifiant"></div><br>
+          <div><label for ="motPasse">Mot de passe</label><input id="motPasse" name="motPasse" type="password" required placeholder="Votre mot de passe"></div><br>
+          <div><label for ="motPasse">Confirmer mot de passe</label><input id="motPasse" name="motPasse" type="password" required placeholder="Confirmer votre mot de passe" ></div><br>
+          <div><label for="courriel">Courriel</label><input id="courriel" name="courriel" type="email" required placeholder="Votre courriel" size="25"></div> <br>
+          <div>
           <label for="sexe">Sexe</label>
-          <input id="sexeF" name="sexe" type="radio" value="femme">Femme
-          <input id="sexe" name="sexe" type="radio" value="homme">Homme        
-          <input id="sexeA" name="sexe" type="radio" value="autre">Autre <br>
+            <input id="sexeF" name="sexe" type="radio" value="femme"> Femme
+            <input id="sexe" name="sexe" type="radio" value="homme"> Homme
+            <input id="sexeA" name="sexe" type="radio" value="autre"> Autre
+          </div><br/>
 
-          Votre photo de profil : <input type="file" name="photoDeProfil" accept="imagne/*,.jpg,.png">
+         <p>Photo de profil :</p> <input type="file" name="photoDeProfil" accept="imagne/*,.jpg,.png">
         </fieldset>
 
         <input type="submit" name="buttsub1" value="Valider">

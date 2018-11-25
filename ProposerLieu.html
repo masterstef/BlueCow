@@ -29,16 +29,16 @@
       <form>
         <input id="counter" name="counter" type="hidden" value="100">
         <fieldset>
-
-          <label for="nomEvent">Nom du lieu</label><input id="nomEvent" name="nomEvent" type="text" required placeholder="Nom de l'évènement"><br>
-          <label for="Description">Description du lieu</label><textarea id="Description" name="Description" rows="3" cols="20" required></textarea> <br>
+          <legend>Informations</legend>
+          <div><label for="nomEvent">Nom du lieu</label><input id="nomEvent" name="nomEvent" type="text" required placeholder="Nom de l'évènement"></div><br>
+          <div><label for="Description">Description du lieu</label><textarea id="Description" name="Description" rows="3" cols="20" required></textarea></div> <br>
           
-          <label for="rue">Rue</label><input id="rue" name="rue" type="text"  placeholder="ex:Rue Robert Peutat"><br>
-          <label for="numMaison">Numéro de maison</label><input id="numMaison" name="numMaison" type="number"  placeholder="N°8"><br>
-          <label for="codePost">Code postal</label><input id="codePost" name="codePost" type="number" pattern="^\d{4}$" placeholder="ex:4834" ><br>
-          <label for="localite">Localité</label><input id="localite" name="localite" type="text"  placeholder="ex:Goé"><br>
-          <label for="localite">Province</label><input id="localite" name="localite" type="text"  placeholder="ex:Liège"><br>
-          Image du lieu : <input type="file" name="photoDeProfil" accept="imagne/*,.jpg,.png">
+          <div><label for="rue">Rue</label><input id="rue" name="rue" type="text"  placeholder="ex:Rue Robert Peutat"></div><br>
+          <div><label for="numMaison">Numéro de maison</label><input id="numMaison" name="numMaison" type="number"  placeholder="N°8"></div><br>
+          <div><label for="codePost">Code postal</label><input id="codePost" name="codePost" type="number" pattern="^\d{4}$" placeholder="ex:4834"></div><br>
+          <div><label for="localite">Localité</label><input id="localite" name="localite" type="text" placeholder="ex: Goé"></div><br>
+          <div><label for="localite">Province</label><input id="localite" name="localite" type="text" placeholder="ex: Liège"></div><br>
+          <p>Image du lieu :</p> <input type="file" name="photoDeProfil" accept="imagne/*,.jpg,.png">
         </fieldset>
 
         <input type="submit" name="buttsub1" value="Valider">

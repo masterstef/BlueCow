@@ -91,7 +91,7 @@ header a {
     margin : 15px 10px 15px 10px;
     padding:10px;
     font-family:Arial;
-    border-radius:5% ;
+    border-radius: 3px;
 }
 .recherche{
 
@@ -179,7 +179,7 @@ img{
 .menu_sport{
     position: fixed;
 
-    bottom: 75%;
+    bottom: 79%;
     right: 1%;
     border: 3px rgba(0,0,0, 0.3) solid;
     padding: 3px;
@@ -191,7 +191,6 @@ img{
 {
     border: 2px rgba(0,0,0, 0.3) solid;
     border-top: 0px;
-    border-bottom: 0px;
     padding : 2px;
 }
 
@@ -200,6 +199,7 @@ img{
     border: 2px rgba(0,0,0, 0.3) solid;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+    padding : 2px;
 }
 
 .dernier_bouton_menu_sport
@@ -207,5 +207,26 @@ img{
     border: 2px rgba(0,0,0, 0.3) solid;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
+    border-top: 0px;
     padding : 2px;
+}
+
+fieldset
+{
+    display: flex;
+}
+
+label
+{
+    margin: auto;
+}
+
+input
+{
+    margin: auto;
+}
+
+textarea
+{
+    margin : auto;
 }

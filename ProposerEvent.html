@@ -1,4 +1,4 @@
-s<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="utf-8"/>
@@ -6,7 +6,7 @@ s<!DOCTYPE html>
     <title>Proposer un lieu eSport</title>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
   </head>
-  <body>
+  <body class="Formulaire">
     <header>
       <h1>BlueCow</h1>
     
@@ -28,17 +28,19 @@ s<!DOCTYPE html>
       <form>
         <input id="counter" name="counter" type="hidden" value="100">
         <fieldset>
+          <legend>Informations</legend>
 
-          <label for="nomEvent">Nom de l'évènement</label><input id="nomEvent" name="nomEvent" type="text" required placeholder="Nom de l'évènement"><br>
-          <label for="Description">Description de l'évènement</label><textarea id="Description" name="Description" rows="3" cols="20" required></textarea> <br>
-          <label for="satisfaction">Votre satisfaction</label><input id="satisfaction" type="range" min="0" max="5" step="1"> <br>
-          Image de l'évènement : <input type="file" name="photoDeProfil" accept="imagne/*,.jpg,.png">
+          <div><label for="nomEvent">Nom</label><input id="nomEvent" name="nomEvent" type="text" required placeholder="Nom de l'évènement"></div><br>
+          <div><label for="Description">Description</label><textarea id="Description" name="Description" rows="15" cols="20" required></textarea></div><br>
+          <label for="satisfaction">Satisfaction</label><input id="satisfaction" type="range" min="1" max="5" step="1"> <br>
+          <p>Image de l'évènement :</p> <input type="file" name="photoDeProfil" accept="imagne/*,.jpg,.png">
         </fieldset>
 
         <input type="submit" name="buttsub1" value="Valider">
         <input type="reset" name="reset1" value="Réinitialiser">
 
       </form>
-    </body>
-  </main>
+    </main>
+  </body>
+
 </html>
