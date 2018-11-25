@@ -1,61 +1,75 @@
+@font-face 
+{
+    font-family: 'Surface_Medium';
+    src: url('../fonts/Surface_Medium-webfont.eot') format('eot'),
+         url('../fonts/Surface_Medium-webfont.svg') format('svg'),
+         url('../fonts/Surface_Medium-webfont.ttf') format('ttf'),
+         url('../fonts/Surface_Medium-webfont.woff') format('woff');
+}
 header h1 {
-    
     font-family:Arial Black ;
-
 }
 body {
-    font-family:Arial ;
+    font-family:'Surface_Medium' ;
     background-color:#415B75;
     color: white;
     text-align: center;
 }
 h2{
     text-decoration: underline;
-    border: 3px solid #343D47;
-    background-color:#414D59;
+    border: 3px solid ;
+    border-color: rgba(96, 145, 193, 0.1);
+    background-color:rgba(96, 145, 193, 0.1);
 }
-h3{
-     
-    
-}
+
 label {
         display: inline-block;
         width: 120px;
         vertical-align: top;
-      }
-      label::after{
+        margin: auto;
+}
+label::after{
         content: " :";
-      }
-      label.radio {
+}
+label.radio {
         display: inline;
-      }
-      label.radio::after {
+}
+label.radio::after {
         content: "";
-      }
-      input[type=text], input[type=range], input[type=date], input[type=mail], input[type=password], input[type=url], textarea, select {
+}
+input[type=text], input[type=range], input[type=date], input[type=mail], input[type=password], input[type=url], textarea, select {
         width: 200px;
-        margin-bottom: 5px;
-      }
-      fieldset {
+        margin-bottom: 5px;       
+}
+fieldset {
         margin-bottom: 15px;
-      }
-            input:required{
+        display: flex;
+        flex-direction:column;
+}
+
+input:required{
         color: red;
-      }
+}
+textarea{
+    margin : auto;
+}
+      
   
 .articleSport{
-    background-color:#61758A;
+    background-color: rgba(1, 20, 46, 0.5);
     margin : 40px 200px ;
-    border: 5px solid #343D47;
+    border: 5px solid ;
+    border-color: rgba(96, 145, 193, 0.1);
     padding:10px;
     width:45%;
     display: inline-block;
     border-radius:25px ;
 }  
 .articleAcceuil{
-    background-color:#61758A;
+    background-color: rgba(1, 20, 46, 0.5);
     margin : 40px 15px ;
-    border: 5px solid #343D47;
+    border: 5px solid;
+    border-color: rgba(96, 145, 193, 0.1);
     padding:10px;
     width:45%;
     display: inline-block;
@@ -90,15 +104,15 @@ header a {
     color:black;
     margin : 15px 10px 15px 10px;
     padding:10px;
-    font-family:Arial;
-    border-radius: 3px;
+    font-family:Surface_Medium;
+    border-radius:3px ;
 }
 .recherche{
 
     color:white;
     margin : 15px 10px 15px 10px;
     padding:10px;
-    font-family:Arial;
+    font-family:Surface_Medium;
     border-radius:5% ;
 }
 header a:hover{
@@ -110,35 +124,33 @@ figure{
     float:left;
      width: 100px; height: 100px;
 }
- footer article{
-        text-align: right;
-}
+
 a{
     color:white;
     text-decoration:none;
 }
 .Com{
-    background-color:#61758A;
+    background-color: rgba(1, 20, 46, 0.5);
     margin : 40px 15px ;
-    border: 5px solid #343D47;
+    border: 5px solid;
+    border-color: rgba(96, 145, 193, 0.1);
     padding:10px;
     width:45%;
     display: inline-block;
     border-radius:25px ;
 }
 
-footer{
-    background-color:#61758A;
-        text-align:right;
-    
+footer {
+    text-align:right; 
 }
 .New::after{content : " NOUVEAU" ;
 text-decoration:none;
 color:""
-
+}
+aside {
+    border-color: rgba(96, 145, 193, 0.1);
     
 }
-
 aside div {
     display:flex;
     flex-direction:column;
@@ -163,7 +175,7 @@ img{
     margin:auto;
 }
 .Accueil{
-    background: url("../images/Accueil.jpg") top;
+    background: #000024 url("../images/Accueil.jpg") no-repeat;
     color: white;
     text-align: center;
 }
@@ -175,8 +187,16 @@ img{
 .Kayak{
      background-image: url("../images/Kayak.jpg");
 }
-
-.menu_sport{
+.BlueCow{
+    text-decoration:italic;
+}
+#basDePage{
+    background-color: #000024;
+}
+.Formulaire{
+   background-image: url("../images/Formulaire.jpg"); 
+}
+.menuSport{
     position: fixed;
 
     bottom: 79%;
@@ -186,23 +206,18 @@ img{
     border-radius: 10px;
     background-color: rgba(33,33,33, 0.7);
 }
-
-.bouton_menu_sport
-{
+.boutonMenuSport {
     border: 2px rgba(0,0,0, 0.3) solid;
     border-top: 0px;
     padding : 2px;
 }
-
-.premier_bouton_menu_sport
-{
+.premierBoutonMenuSport{
     border: 2px rgba(0,0,0, 0.3) solid;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
     padding : 2px;
 }
-
-.dernier_bouton_menu_sport
+.dernierBoutonMenuSport
 {
     border: 2px rgba(0,0,0, 0.3) solid;
     border-bottom-right-radius: 5px;
@@ -211,22 +226,4 @@ img{
     padding : 2px;
 }
 
-fieldset
-{
-    display: flex;
-}
-
-label
-{
-    margin: auto;
-}
-
-input
-{
-    margin: auto;
-}
-
-textarea
-{
-    margin : auto;
-}
+      
