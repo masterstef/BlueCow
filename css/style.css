@@ -179,8 +179,33 @@ img{
 .menu_sport{
     position: fixed;
 
-    bottom: 1%;
+    bottom: 75%;
     right: 1%;
+    border: 3px rgba(0,0,0, 0.3) solid;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: rgba(33,33,33, 0.7);
 }
 
-      
+.bouton_menu_sport
+{
+    border: 2px rgba(0,0,0, 0.3) solid;
+    border-top: 0px;
+    border-bottom: 0px;
+    padding : 2px;
+}
+
+.premier_bouton_menu_sport
+{
+    border: 2px rgba(0,0,0, 0.3) solid;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.dernier_bouton_menu_sport
+{
+    border: 2px rgba(0,0,0, 0.3) solid;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding : 2px;
+}
