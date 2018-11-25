@@ -163,7 +163,7 @@ img{
     margin:auto;
 }
 .Accueil{
-    background-image: url("../images/Accueil.jpg");
+    background: url("../images/Accueil.jpg") top;
     color: white;
     text-align: center;
 }
@@ -176,6 +176,11 @@ img{
      background-image: url("../images/Kayak.jpg");
 }
 
+.menu_sport{
+    position: fixed;
 
+    bottom: 1%;
+    right: 1%;
+}
 
       
