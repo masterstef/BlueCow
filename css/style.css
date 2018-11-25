@@ -1,0 +1,181 @@
+header h1 {
+    
+    font-family:Arial Black ;
+
+}
+body {
+    font-family:Arial ;
+    background-color:#415B75;
+    color: white;
+    text-align: center;
+}
+h2{
+    text-decoration: underline;
+    border: 3px solid #343D47;
+    background-color:#414D59;
+}
+h3{
+     
+    
+}
+label {
+        display: inline-block;
+        width: 120px;
+        vertical-align: top;
+      }
+      label::after{
+        content: " :";
+      }
+      label.radio {
+        display: inline;
+      }
+      label.radio::after {
+        content: "";
+      }
+      input[type=text], input[type=range], input[type=date], input[type=mail], input[type=password], input[type=url], textarea, select {
+        width: 200px;
+        margin-bottom: 5px;
+      }
+      fieldset {
+        margin-bottom: 15px;
+      }
+            input:required{
+        color: red;
+      }
+  
+.articleSport{
+    background-color:#61758A;
+    margin : 40px 200px ;
+    border: 5px solid #343D47;
+    padding:10px;
+    width:45%;
+    display: inline-block;
+    border-radius:25px ;
+}  
+.articleAcceuil{
+    background-color:#61758A;
+    margin : 40px 15px ;
+    border: 5px solid #343D47;
+    padding:10px;
+    width:45%;
+    display: inline-block;
+    border-radius:25px ;
+    
+} 
+
+.articleAcceuil div{
+    display:flex;
+    flex-direction:row;
+    
+} 
+article{
+    background-color:#61758A;
+    margin : 40px 400px ;
+    border: 5px solid #343D47;
+    border-radius:25px ;
+    padding:10px;
+    width:45%;
+    
+    
+    
+} 
+article p{
+    text-align:left;
+    
+}
+
+
+header a {
+    background-color:white;
+    color:black;
+    margin : 15px 10px 15px 10px;
+    padding:10px;
+    font-family:Arial;
+    border-radius:5% ;
+}
+.recherche{
+
+    color:white;
+    margin : 15px 10px 15px 10px;
+    padding:10px;
+    font-family:Arial;
+    border-radius:5% ;
+}
+header a:hover{
+    color:grey;
+}
+
+
+figure{
+    float:left;
+     width: 100px; height: 100px;
+}
+ footer article{
+        text-align: right;
+}
+a{
+    color:white;
+    text-decoration:none;
+}
+.Com{
+    background-color:#61758A;
+    margin : 40px 15px ;
+    border: 5px solid #343D47;
+    padding:10px;
+    width:45%;
+    display: inline-block;
+    border-radius:25px ;
+}
+
+footer{
+    background-color:#61758A;
+        text-align:right;
+    
+}
+.New::after{content : " NOUVEAU" ;
+text-decoration:none;
+color:""
+
+    
+}
+
+aside div {
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    
+}
+body{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+}
+img{
+    float:left;
+}
+.Parachutisme{
+    background-image: url("../images/parachute.jpg");
+}
+.mainArticle{
+    display:flex;
+}
+.article{
+    margin:auto;
+}
+.Accueil{
+    background-image: url("../images/Accueil.jpg");
+    color: white;
+    text-align: center;
+}
+.MarcheExtreme{
+    background-image: url("../images/MarcheExt.jpg");
+    color: white;
+    text-align: center;
+}
+.Kayak{
+     background-image: url("../images/Kayak.jpg");
+}
+
+
+
+      

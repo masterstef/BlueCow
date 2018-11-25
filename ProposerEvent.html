@@ -1,0 +1,44 @@
+s<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-wdth, initial-scale=1.0">
+    <title>Proposer un lieu eSport</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  </head>
+  <body>
+    <header>
+      <h1>BlueCow</h1>
+    
+      <nav>
+        <a href="index.html"> Accueil  </a>
+        <a href="Sports.html"> Sports   </a>
+        <a href="Commentaires.html"> Commentaires </a>
+        <a href="ProposerLieu.html"> Proposer un lieu </a>
+        <a href="ProposerEvent.html"> Proposer un évènement </a>
+        <a href="Connexion.html"> Connexion  </a>
+        <a href="Inscription.html"> Inscription  </a>
+        
+      </nav>
+      
+    </header>
+  
+    <main>
+      <h3>Proposer un Evènement</h3>
+      <form>
+        <input id="counter" name="counter" type="hidden" value="100">
+        <fieldset>
+
+          <label for="nomEvent">Nom de l'évènement</label><input id="nomEvent" name="nomEvent" type="text" required placeholder="Nom de l'évènement"><br>
+          <label for="Description">Description de l'évènement</label><textarea id="Description" name="Description" rows="3" cols="20" required></textarea> <br>
+          <label for="satisfaction">Votre satisfaction</label><input id="satisfaction" type="range" min="0" max="5" step="1"> <br>
+          Image de l'évènement : <input type="file" name="photoDeProfil" accept="imagne/*,.jpg,.png">
+        </fieldset>
+
+        <input type="submit" name="buttsub1" value="Valider">
+        <input type="reset" name="reset1" value="Réinitialiser">
+
+      </form>
+    </body>
+  </main>
+</html>

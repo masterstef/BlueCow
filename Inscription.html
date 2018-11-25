@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-wdth, initial-scale=1.0">
+    <title>Inscription eSport</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  </head>
+  <body>
+    <header>
+      <h1>BlueCow</h1>
+    
+      <nav>
+        <a href="index.html"> Accueil  </a>
+        <a href="Sports.html"> Sports   </a>
+        <a href="Commentaires.html"> Commentaires </a>
+        <a href="ProposerLieu.html"> Proposer un lieu </a>
+        <a href="ProposerEvent.html"> Proposer un évènement </a>
+        <a href="Connexion.html"> Connexion  </a>
+        <a href="Inscription.html"> Inscription  </a>
+        
+      </nav>
+      
+    </header>
+    <main>
+      <h3>Inscription eSport</h3>
+      <form>
+        <input id="counter" name="counter" type="hidden" value="100">
+        <fieldset>
+          <legend>Votre profil</legend>
+          <label for="nom">Nom</label><input id="nom" name="nom" type="text" required placeholder="Votre nom"><br>
+          <label for="prenom">Prénom</label><input id="prenom" name="prenom" type="text" required placeholder="Votre prénom"><br>
+          <label for="pseudo">Pseudo</label><input id="pseudo" name="pseudo" type="text" required placeholder="Votre pseudo"><br>
+          <label for ="motPasse">Mot de passe</label><input id="motPasse" name="motPasse" type="password" required placeholder="Votre mot de passe"> <br>
+          <label for ="motPasse">Confirmer mot de passe</label><input id="motPasse" name="motPasse" type="password" required placeholder="Confirmer votre mot de passe" > <br>
+          <label for="courriel">Courriel</label><input id="courriel" name="courriel" type="email" required placeholder="Votre courriel"> <br>
+          <label for="sexe">Sexe</label>
+          <input id="sexeF" name="sexe" type="radio" value="femme">Femme
+          <input id="sexe" name="sexe" type="radio" value="homme">Homme        
+          <input id="sexeA" name="sexe" type="radio" value="autre">Autre <br>
+
+          Votre photo de profil : <input type="file" name="photoDeProfil" accept="imagne/*,.jpg,.png">
+        </fieldset>
+
+        <input type="submit" name="buttsub1" value="Valider">
+        <input type="reset" name="reset1" value="Réinitialiser">
+
+      </form>
+    </main>
+  </body>
+</html>
