@@ -9,6 +9,7 @@
 header h1 {
     font-family:Arial Black ;
 }
+
 body {
     font-family:'Surface_Medium' ;
     background-color:#415B75;
@@ -17,6 +18,11 @@ body {
 }
 h2{
     text-decoration: underline;
+    border: 3px solid ;
+    border-color: rgba(96, 145, 193, 0.1);
+    background-color:rgba(96, 145, 193, 0.1);
+}
+h3{
     border: 3px solid ;
     border-color: rgba(96, 145, 193, 0.1);
     background-color:rgba(96, 145, 193, 0.1);
@@ -46,15 +52,133 @@ fieldset {
         display: flex;
         flex-direction:column;
 }
-
 input:required{
         color: red;
 }
 textarea{
     margin : auto;
 }
-      
-  
+article{
+    display:flex;
+    margin:auto;
+    background-color: rgba(1, 20, 46, 0.5);  
+    border: 5px solid;
+    border-color: rgba(96, 145, 193, 0.1);
+    padding:10px;
+    width:45%;
+    display: inline-block;
+    border-radius:25px ;
+} 
+article p{
+    text-align:left;
+}
+header a {
+    background-color:white;
+    color:black;
+    margin : 15px 10px 15px 10px;
+    padding:10px;
+    font-family:Surface_Medium;
+    border-radius:3px ;
+}
+header a:hover{
+    color:grey;
+}
+figure{
+    float:left;
+     width: 100px; height: 100px;
+}
+a{
+    color:white;
+    text-decoration:none;
+}
+footer {
+    text-align:right;
+    display:flex;  
+    flex-direction:column;
+}
+aside {
+    border-color: rgba(96, 145, 193, 0.1);  
+}
+aside div {
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;    
+}
+body{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+}
+img{
+    float:left;
+}
+#basDePage{
+    background-color: #000024;
+}
+.Formulaire{
+   background-image: url("../images/Formulaire.jpg"); 
+}
+.menuSport{
+    position: fixed;
+
+    bottom: 70%;
+    right: 3%;
+    border: 3px rgba(0,0,0, 0.3) solid;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: rgba(1, 20, 46, 0.5);
+}
+.boutonMenuSport {
+    border: 2px rgba(0,0,0, 0.3) solid;
+    border-top: 0px;
+    padding : 2px;
+}
+.premierBoutonMenuSport{
+    border: 2px rgba(0,0,0, 0.3) solid;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding : 2px;
+}
+.dernierBoutonMenuSport
+{
+    border: 2px rgba(0,0,0, 0.3) solid;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top: 0px;
+    padding : 2px;
+}
+.articleAcceuil div{
+    display:flex;
+    flex-direction:row;
+    
+}
+.connecte{
+    display:flex
+    
+}
+.profil{
+    background-color:blue;
+} 
+.Parachutisme{
+    background-image: url("../images/parachute.jpg");
+}
+.mainArticle{
+    display:flex;
+    
+}
+.Accueil{
+    background: #000024 url("../images/Accueil.jpg") no-repeat;
+    color: white;
+    text-align: center;
+}
+.MarcheExtreme{
+    background-image: url("../images/MarcheExt.jpg");
+    color: white;
+    text-align: center;
+}
+.Kayak{
+     background-image: url("../images/Kayak.jpg");
+}
 .articleSport{
     background-color: rgba(1, 20, 46, 0.5);
     margin : 40px 200px ;
@@ -76,58 +200,9 @@ textarea{
     border-radius:25px ;
     
 } 
-
-.articleAcceuil div{
-    display:flex;
-    flex-direction:row;
-    
-} 
-article{
-    background-color:#61758A;
-    margin : 40px 400px ;
-    border: 5px solid #343D47;
-    border-radius:25px ;
-    padding:10px;
-    width:45%;
-    
-    
-    
-} 
-article p{
-    text-align:left;
-    
-}
-
-
-header a {
-    background-color:white;
-    color:black;
-    margin : 15px 10px 15px 10px;
-    padding:10px;
-    font-family:Surface_Medium;
-    border-radius:3px ;
-}
-.recherche{
-
-    color:white;
-    margin : 15px 10px 15px 10px;
-    padding:10px;
-    font-family:Surface_Medium;
-    border-radius:5% ;
-}
-header a:hover{
-    color:grey;
-}
-
-
-figure{
-    float:left;
-     width: 100px; height: 100px;
-}
-
-a{
-    color:white;
-    text-decoration:none;
+.New::after{content : " NOUVEAU" ;
+text-decoration:none;
+color:#DAE6FF;
 }
 .Com{
     background-color: rgba(1, 20, 46, 0.5);
@@ -139,91 +214,11 @@ a{
     display: inline-block;
     border-radius:25px ;
 }
+.recherche{
 
-footer {
-    text-align:right; 
+    color:white;
+    margin : 15px 10px 15px 10px;
+    padding:10px;
+    font-family:Surface_Medium;
+    border-radius:5% ;
 }
-.New::after{content : " NOUVEAU" ;
-text-decoration:none;
-color:""
-}
-aside {
-    border-color: rgba(96, 145, 193, 0.1);
-    
-}
-aside div {
-    display:flex;
-    flex-direction:column;
-    justify-content:flex-end;
-    
-}
-body{
-    display:flex;
-    flex-direction:column;
-    justify-content:flex-end;
-}
-img{
-    float:left;
-}
-.Parachutisme{
-    background-image: url("../images/parachute.jpg");
-}
-.mainArticle{
-    display:flex;
-}
-.article{
-    margin:auto;
-}
-.Accueil{
-    background: #000024 url("../images/Accueil.jpg") no-repeat;
-    color: white;
-    text-align: center;
-}
-.MarcheExtreme{
-    background-image: url("../images/MarcheExt.jpg");
-    color: white;
-    text-align: center;
-}
-.Kayak{
-     background-image: url("../images/Kayak.jpg");
-}
-.BlueCow{
-    text-decoration:italic;
-}
-#basDePage{
-    background-color: #000024;
-}
-.Formulaire{
-   background-image: url("../images/Formulaire.jpg"); 
-}
-.menuSport{
-    position: fixed;
-
-    bottom: 79%;
-    right: 1%;
-    border: 3px rgba(0,0,0, 0.3) solid;
-    padding: 3px;
-    border-radius: 10px;
-    background-color: rgba(33,33,33, 0.7);
-}
-.boutonMenuSport {
-    border: 2px rgba(0,0,0, 0.3) solid;
-    border-top: 0px;
-    padding : 2px;
-}
-.premierBoutonMenuSport{
-    border: 2px rgba(0,0,0, 0.3) solid;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    padding : 2px;
-}
-.dernierBoutonMenuSport
-{
-    border: 2px rgba(0,0,0, 0.3) solid;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-top: 0px;
-    padding : 2px;
-}
-
-      
